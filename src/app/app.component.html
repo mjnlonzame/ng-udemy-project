@@ -1,0 +1,9 @@
+<app-header (selectedHeader)="onHeaderChange($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="currentHeader === 'recipes'"></app-recipes >
+      <app-shopping-list *ngIf="currentHeader !== 'recipes'"></app-shopping-list>
+    </div>
+  </div>
+</div>
