@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentHeader = 'recipe';
+  currentHeader = 'recipes';
   onHeaderChange(headerName : string){
     console.log(headerName);
     this.currentHeader = headerName;
